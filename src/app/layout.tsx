@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { inter, instrumentSerif } from "@/lib/fonts";
 import { siteConfig } from "@/lib/constants";
 import "./globals.css";
@@ -52,7 +53,10 @@ export default function RootLayout({
       lang="lt"
       className={`${inter.variable} ${instrumentSerif.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
