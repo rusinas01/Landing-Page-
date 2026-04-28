@@ -1,26 +1,267 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primitives — warm-tinted neutrals */
+  --black: #0a0a0b;
+  --grey-950: #121214;
+  --grey-900: #1a1a1d;
+  --grey-800: #26262a;
+  --grey-700: #333338;
+  --grey-600: #56565e;
+  --grey-400: #888890;
+  --grey-200: #c8c8ce;
+  --grey-100: #e4e4e8;
+  --white: #f8f8fa;
+  --accent: #2db88a;
+  --accent-hover: #25a07a;
+  --accent-muted: #1a7a5a;
+  --error: #ef4444;
+  --success: #22c55e;
+  /* Aurora — tuned to site dark palette + blue accent */
+  --transparent: transparent;
+  --blue-500: #6f7ba8;
+  --indigo-300: #1d2238;
+  --blue-300: #454d77;
+  --violet-200: #171b2e;
+  --blue-400: #525a8c;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes aurora {
+  from {
+    background-position: 50% 50%, 50% 50%;
+  }
+  to {
+    background-position: 350% 50%, 350% 50%;
   }
 }
 
+/* ── Landin Glow Primitives ──────────────────────────────────────── */
+
+/*
+ * landin-card: the signature border-edge glow.
+ * Layer 1: 1px inner white line (inset)
+ * Layer 2: 8px diffuse electric-blue glow leaking over the border
+ * Layer 3: deep, long drop-shadow for the "floating" feel
+ */
+.landin-card {
+  position: relative;
+  transition:
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow:
+    0 20px 50px -12px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+  will-change: transform, box-shadow;
+}
+
+.landin-card:hover {
+  transform: scale(1.03);
+  border-color: rgba(138, 150, 196, 0.35);
+  box-shadow:
+    0 30px 70px -20px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+    0 0 0 1px rgba(138, 150, 196, 0.25),
+    0 0 24px 0 rgba(138, 150, 196, 0.35);
+}
+
+/*
+ * landin-button: scale + dual glow for primary CTAs.
+ */
+.landin-button {
+  transition:
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.12) inset,
+    0 8px 24px -8px rgba(138, 150, 196, 0.5);
+  will-change: transform, box-shadow;
+}
+
+.landin-button:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.2) inset,
+    0 12px 32px -8px rgba(138, 150, 196, 0.7),
+    0 0 20px 0 rgba(138, 150, 196, 0.45);
+}
+
+.landin-button:active {
+  transform: scale(0.98);
+}
+
+/*
+ * btn-primary-blue: periwinkle #8a96c4 CTA with top-edge highlight and ambient halo.
+ * Matches the reference blue button: bright top lip, deep blue body, soft halo.
+ */
+.btn-primary-blue {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 26px;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #9da8d0 0%, #8a96c4 45%, #6f7ba8 100%);
+  border: 1px solid #929ec8;
+  border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.18) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.45) inset,
+    0 8px 24px -6px rgba(138, 150, 196, 0.55),
+    0 0 28px 0 rgba(138, 150, 196, 0.35);
+  transition:
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.2s ease;
+  will-change: transform, box-shadow;
+}
+.btn-primary-blue:hover {
+  transform: scale(1.03);
+  filter: brightness(1.08);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.25) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.55) inset,
+    0 14px 36px -8px rgba(138, 150, 196, 0.75),
+    0 0 36px 0 rgba(138, 150, 196, 0.5);
+}
+.btn-primary-blue:active {
+  transform: scale(0.98);
+}
+
+/*
+ * eyebrow-tag: the pill badge sitting above every section title.
+ * Dark #121214 backdrop, white Regular text, white leading dot,
+ * plus a subtle blue radial shadow above that "lifts" it.
+ */
+.eyebrow-tag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #f5f5f7;
+  background: #121214;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+    0 -8px 24px -4px rgba(138, 150, 196, 0.35),
+    0 4px 12px -4px rgba(0, 0, 0, 0.6);
+}
+
+.eyebrow-tag__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+@theme inline {
+  --animate-aurora: aurora 60s linear infinite;
+  --color-bg-primary: var(--black);
+  --color-bg-secondary: var(--grey-950);
+  --color-bg-surface: var(--grey-900);
+  --color-bg-surface-hover: var(--grey-800);
+  --color-text-primary: var(--white);
+  --color-text-secondary: var(--grey-200);
+  --color-text-muted: var(--grey-400);
+  --color-border: var(--grey-800);
+  --color-border-hover: var(--grey-600);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-muted: var(--accent-muted);
+  --color-error: var(--error);
+  --color-success: var(--success);
+  --color-star-empty: var(--grey-700);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--grey-700) transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+::selection {
+  background-color: var(--accent-muted);
+  color: var(--white);
+}
+
+/* Focus ring utility */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ── Workbench grid — faint 1px lines, fade out at top/bottom ── */
+.workbench-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(
+      to right,
+      transparent 0,
+      transparent calc(50% - 0.5px),
+      rgba(255, 255, 255, 0.025) calc(50% - 0.5px),
+      rgba(255, 255, 255, 0.025) calc(50% + 0.5px),
+      transparent calc(50% + 0.5px),
+      transparent 100%
+    ),
+    linear-gradient(
+      to right,
+      transparent 0,
+      transparent calc(25% - 0.5px),
+      rgba(255, 255, 255, 0.018) calc(25% - 0.5px),
+      rgba(255, 255, 255, 0.018) calc(25% + 0.5px),
+      transparent calc(25% + 0.5px),
+      transparent calc(75% - 0.5px),
+      rgba(255, 255, 255, 0.018) calc(75% - 0.5px),
+      rgba(255, 255, 255, 0.018) calc(75% + 0.5px),
+      transparent calc(75% + 0.5px)
+    );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000 15%,
+    #000 85%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000 15%,
+    #000 85%,
+    transparent 100%
+  );
+}
+
+/* Reduced motion: disable all animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
