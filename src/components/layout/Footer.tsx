@@ -28,7 +28,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 pb-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <div className="flex items-center mb-5">
+            <a
+              href="/"
+              className="inline-flex items-center mb-5 transition-opacity hover:opacity-80"
+              aria-label={siteConfig.name}
+            >
               <img
                 src="/wordmark.svg"
                 alt={siteConfig.name}
@@ -36,7 +40,7 @@ export default function Footer() {
                 height={142}
                 className="h-14 w-auto"
               />
-            </div>
+            </a>
             <p
               className="font-[var(--font-inter)] font-light"
               style={{

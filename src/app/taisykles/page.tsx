@@ -49,7 +49,7 @@ export default function TermsPage() {
                 className="font-[var(--font-inter)] font-light mb-12"
                 style={{ fontSize: "14px", color: "#71717a" }}
               >
-                Paskutinį kartą atnaujinta: 2026 m. balandžio 26 d.
+                Paskutinį kartą atnaujinta: 2026 m. balandžio 28 d.
               </p>
 
               <section className="mb-10">

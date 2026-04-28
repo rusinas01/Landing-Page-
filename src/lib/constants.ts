@@ -8,11 +8,11 @@ export const siteConfig = {
 };
 
 export const navLinks = [
-  { label: "Darbai", href: "#works" },
-  { label: "Paslaugos", href: "#services" },
-  { label: "Procesas", href: "#process" },
-  { label: "Kainos", href: "#pricing" },
-  { label: "Kontaktai", href: "#contact" },
+  { label: "Darbai", href: "/#works" },
+  { label: "Paslaugos", href: "/#services" },
+  { label: "Procesas", href: "/#process" },
+  { label: "Kainos", href: "/#pricing" },
+  { label: "Kontaktai", href: "/#contact" },
 ];
 
 export const heroContent = {

@@ -49,7 +49,7 @@ export default function PrivacyPage() {
                 className="font-[var(--font-inter)] font-light mb-12"
                 style={{ fontSize: "14px", color: "#71717a" }}
               >
-                Paskutinį kartą atnaujinta: 2026 m. balandžio 26 d.
+                Paskutinį kartą atnaujinta: 2026 m. balandžio 28 d.
               </p>
 
               <section className="mb-10">
@@ -89,10 +89,17 @@ export default function PrivacyPage() {
                     color: "#A0A0A0",
                   }}
                 >
-                  Svetainėje nenaudojami sekimo ar analitikos slapukai. Asmens
-                  duomenis (vardą, el. pašto adresą, telefono numerį) renkame
-                  tik tuo atveju, jei juos savanoriškai pateikiate užpildę
+                  Asmens duomenis (vardą, el. pašto adresą, telefono numerį,
+                  pasirinktas paslaugas, jūsų pateiktą pranešimą) renkame tik
+                  tuo atveju, jei juos savanoriškai pateikiate užpildę
                   kontaktinę formą.
+                  <br />
+                  <br />
+                  Svetainėje nenaudojami rinkodaros ar sekimo slapukai. Anoniminė
+                  techninė informacija apie svetainės našumą (puslapio krovimosi
+                  greitis, sąveikos vėlavimas) renkama per „Vercel Speed
+                  Insights“ — be slapukų ir asmens identifikatorių. Šie duomenys
+                  naudojami išskirtinai svetainės kokybės gerinimui.
                 </p>
               </section>
 
@@ -112,11 +119,19 @@ export default function PrivacyPage() {
                   }}
                 >
                   Jūsų pateikti duomenys naudojami tik tam, kad galėtume su
-                  jumis susisiekti ir atsakyti į užklausas dėl paslaugų.
+                  jumis susisiekti ir atsakyti į užklausas dėl paslaugų — tarp
+                  jų atsiųsti nemokamą svetainės maketą, vietinio SEO ir
+                  „Google“ atsiliepimų auditą bei (pasirinkus vietinio SEO
+                  paslaugą) asmeninį 3 min. video.
+                  <br />
+                  <br />
+                  Svetainė talpinama „Vercel Inc.“ (JAV) infrastruktūroje.
                   Kontaktinės formos pranešimai pristatomi į „Arktiv Media“
-                  pašto dėžutę naudojant „Resend“ el. pašto pristatymo
-                  paslaugą. Jūsų duomenys nėra parduodami ar perduodami
-                  trečiosioms šalims rinkodaros tikslais.
+                  pašto dėžutę naudojant „Resend“ (JAV) el. pašto pristatymo
+                  paslaugą. Abu paslaugų teikėjai laikosi BDAR reikalavimų ir
+                  taiko standartines duomenų apsaugos priemones. Jūsų duomenys
+                  nėra parduodami ar perduodami trečiosioms šalims rinkodaros
+                  tikslais.
                 </p>
               </section>
 
