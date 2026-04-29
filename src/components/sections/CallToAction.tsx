@@ -77,7 +77,7 @@ export default function CallToAction() {
 
             {/* CTA — single, centered, compact, no clutter */}
             <div className="mt-10 flex justify-center">
-              <a href="#contact" className="btn-primary-blue">
+              <a href="/kontaktai" className="btn-primary-blue">
                 {ctaContent.cta}
               </a>
             </div>

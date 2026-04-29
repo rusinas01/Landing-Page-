@@ -2,11 +2,29 @@
 
 import { useEffect } from "react";
 
+const PATH_TO_SECTION: Record<string, string> = {
+  "/darbai": "works",
+  "/paslaugos": "services",
+  "/procesas": "process",
+  "/kainos": "pricing",
+  "/kontaktai": "contact",
+};
+
+const SECTION_PATHS = new Set(Object.keys(PATH_TO_SECTION));
+
+function isSectionPath(pathname: string): pathname is keyof typeof PATH_TO_SECTION {
+  return SECTION_PATHS.has(pathname);
+}
+
 export default function CleanHashLinks() {
   useEffect(() => {
     function scrollToId(id: string) {
       const el = document.getElementById(id);
       if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function isHomePath(pathname: string) {
+      return pathname === "/" || isSectionPath(pathname);
     }
 
     function handleClick(e: MouseEvent) {
@@ -19,31 +37,43 @@ export default function CleanHashLinks() {
       const href = link.getAttribute("href");
       if (!href) return;
 
+      // Pretty section route like /kainos
+      if (isSectionPath(href)) {
+        if (!isHomePath(window.location.pathname)) return; // let browser navigate
+        e.preventDefault();
+        scrollToId(PATH_TO_SECTION[href]);
+        window.history.pushState(null, "", href);
+        return;
+      }
+
+      // Legacy hash links (#contact or /#contact)
       const match = href.match(/^\/?#(.+)$/);
       if (!match) return;
-
       const sameOriginCrossPage =
-        href.startsWith("/#") && window.location.pathname !== "/";
+        href.startsWith("/#") && !isHomePath(window.location.pathname);
       if (sameOriginCrossPage) return;
-
       e.preventDefault();
       scrollToId(match[1]);
-      window.history.replaceState(null, "", window.location.pathname);
+      window.history.replaceState(null, "", "/");
     }
 
     document.addEventListener("click", handleClick);
 
-    if (window.location.hash && window.location.pathname === "/") {
+    // Initial load: scroll to section if URL is /kainos etc, or if there's a #hash
+    const path = window.location.pathname;
+    if (isSectionPath(path)) {
+      const id = PATH_TO_SECTION[path];
+      const cleanup = () => scrollToId(id);
+      if (document.readyState === "complete") cleanup();
+      else window.addEventListener("load", cleanup, { once: true });
+    } else if (window.location.hash && path === "/") {
       const id = window.location.hash.slice(1);
       const cleanup = () => {
         scrollToId(id);
         window.history.replaceState(null, "", "/");
       };
-      if (document.readyState === "complete") {
-        cleanup();
-      } else {
-        window.addEventListener("load", cleanup, { once: true });
-      }
+      if (document.readyState === "complete") cleanup();
+      else window.addEventListener("load", cleanup, { once: true });
     }
 
     return () => document.removeEventListener("click", handleClick);

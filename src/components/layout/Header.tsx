@@ -85,7 +85,7 @@ export default function Header() {
 
             {/* Desktop CTA — gradient glow button matching site CTA */}
             <div className="hidden lg:block shrink-0">
-              <a href="/#contact" className="btn-primary-blue whitespace-nowrap">
+              <a href="/kontaktai" className="btn-primary-blue whitespace-nowrap">
                 Gaukite NEMOKAMĄ auditą
               </a>
             </div>
@@ -155,7 +155,7 @@ export default function Header() {
                     transition={{ delay: 0.3 }}
                   >
                     <a
-                      href="/#contact"
+                      href="/kontaktai"
                       className="inline-flex items-center justify-center font-[var(--font-inter)] font-normal text-[15px] text-white w-full transition-all duration-200 hover:brightness-110 active:scale-[0.98]"
                       style={{
                         background: "#8a96c4",

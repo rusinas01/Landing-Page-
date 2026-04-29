@@ -72,7 +72,7 @@ export default function MidCta() {
             </div>
 
             <div className="shrink-0">
-              <a href="#contact" className="btn-primary-blue whitespace-nowrap">
+              <a href="/kontaktai" className="btn-primary-blue whitespace-nowrap">
                 {midCtaContent.cta}
               </a>
             </div>

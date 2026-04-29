@@ -93,7 +93,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.6, ease }}
         >
           <a
-            href="#contact"
+            href="/kontaktai"
             className="inline-flex items-center justify-center font-[var(--font-inter)] font-normal text-[15px] transition-all duration-200 hover:brightness-95 active:scale-[0.98]"
             style={{
               background: "#FFFFFF",
@@ -108,7 +108,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="#works"
+            href="/darbai"
             className="inline-flex items-center justify-center font-[var(--font-inter)] font-normal text-[15px] transition-all duration-200 hover:bg-white/[0.12] active:scale-[0.98]"
             style={{
               background: "rgba(255, 255, 255, 0.08)",

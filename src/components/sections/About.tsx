@@ -73,7 +73,7 @@ export default function About() {
               className="flex justify-center"
               variants={fadeInUp}
             >
-              <a href="#contact" className="btn-primary-blue">
+              <a href="/kontaktai" className="btn-primary-blue">
                 Gaukite NEMOKAMĄ auditą
               </a>
             </motion.div>

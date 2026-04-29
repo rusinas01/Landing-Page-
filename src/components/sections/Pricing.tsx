@@ -216,7 +216,7 @@ export default function Pricing() {
             className="flex justify-center mt-12"
             variants={fadeInUp}
           >
-            <a href="#contact" className="btn-primary-blue">
+            <a href="/kontaktai" className="btn-primary-blue">
               Gaukite NEMOKAMĄ auditą
             </a>
           </motion.div>

@@ -80,7 +80,7 @@ export default function NotFound() {
                   Grįžti į pradžią
                 </a>
                 <a
-                  href="/#contact"
+                  href="/kontaktai"
                   className="inline-flex items-center justify-center font-[var(--font-inter)] font-normal text-[15px] transition-all duration-200 hover:bg-white/[0.12] active:scale-[0.98]"
                   style={{
                     background: "rgba(255, 255, 255, 0.06)",
