@@ -3,6 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import { inter, instrumentSerif } from "@/lib/fonts";
 import { siteConfig } from "@/lib/constants";
+import CleanHashLinks from "@/components/layout/CleanHashLinks";
 import "./globals.css";
 
 const title = "Arktiv Media — Dvigubai daugiau užklausų per 90 dienų";
@@ -62,6 +63,7 @@ export default function RootLayout({
     >
       <body>
         {children}
+        <CleanHashLinks />
         <Analytics />
         <SpeedInsights />
       </body>
