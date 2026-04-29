@@ -68,8 +68,8 @@ export default function PrivacyPage() {
                   }}
                 >
                   Ši privatumo politika nustato, kaip „Arktiv Media“ (Vilnius,
-                  Lietuva) renka ir naudoja jūsų asmens duomenis. Mes gerbiame
-                  jūsų privatumą ir įsipareigojame saugoti jūsų pateiktą
+                  Lietuva) renka ir naudoja Jūsų asmens duomenis. Mes gerbiame
+                  Jūsų privatumą ir įsipareigojame saugoti Jūsų pateiktą
                   informaciją.
                 </p>
               </section>
@@ -90,14 +90,15 @@ export default function PrivacyPage() {
                   }}
                 >
                   Asmens duomenis (vardą, el. pašto adresą, telefono numerį,
-                  pasirinktas paslaugas, jūsų pateiktą pranešimą) renkame tik
+                  pasirinktas paslaugas, Jūsų pateiktą pranešimą) renkame tik
                   tuo atveju, jei juos savanoriškai pateikiate užpildę
                   kontaktinę formą.
                   <br />
                   <br />
                   Svetainėje nenaudojami rinkodaros ar sekimo slapukai. Anoniminė
-                  techninė informacija apie svetainės našumą (puslapio krovimosi
-                  greitis, sąveikos vėlavimas) renkama per „Vercel Speed
+                  statistika apie apsilankymus ir svetainės našumą (puslapių
+                  peržiūros, šaltiniai, puslapio krovimosi greitis, sąveikos
+                  vėlavimas) renkama per „Vercel Analytics“ ir „Vercel Speed
                   Insights“ — be slapukų ir asmens identifikatorių. Šie duomenys
                   naudojami išskirtinai svetainės kokybės gerinimui.
                 </p>

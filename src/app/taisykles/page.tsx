@@ -142,7 +142,7 @@ export default function TermsPage() {
                   svetainės būklės.
                   <br />
                   <br />
-                  Tikslas pasiekti „Google“ Top 3 jūsų mieste per 90 dienų
+                  Tikslas pasiekti „Google“ Top 3 Jūsų mieste per 90 dienų
                   taikomas tik tuomet, kai vienu metu užsakomos vietinio SEO
                   ir „Google“ atsiliepimų valdymo paslaugos. Užsisakius tik
                   vieną iš šių paslaugų atskirai, terminas ir pasiekiamos

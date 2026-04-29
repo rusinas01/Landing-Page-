@@ -18,7 +18,7 @@ export const navLinks = [
 export const heroContent = {
   headline: "Dvigubai daugiau užklausų per 90 dienų.",
   subheadline:
-    "Sujungiame aukščiausio lygio dizainą, vietinį SEO ir automatizuotą atsiliepimų rinkimą į vieną sistemą, kuri paverčia jūsų svetainę klientų magnetu.",
+    "Sujungiame aukščiausio lygio dizainą, vietinį SEO ir automatizuotą atsiliepimų rinkimą į vieną sistemą, kuri paverčia Jūsų svetainę klientų magnetu.",
   cta: "Susisiekti",
 };
 
@@ -48,8 +48,8 @@ export const problems = [
     icon: "monitor",
   },
   {
-    title: "Niekas jūsų neranda „Google“",
-    problem: "Esate nematomi ten, kur jūsų ieško.",
+    title: "Niekas Jūsų neranda „Google“",
+    problem: "Esate nematomi ten, kur Jūsų ieško.",
     description:
       "Galite būti geriausi savo srityje, bet jei „Google“ pirmame puslapyje karaliauja konkurentai, jūs tiesiog neegzistuojate. Kiekviena diena be SEO yra atiduota užklausa kitam.",
     icon: "search",
@@ -66,7 +66,7 @@ export const problems = [
 export const solutionsContent = {
   title: "Trys dalys. Viena sistema.",
   subtitle:
-    "SEO iškelia. Svetainė konvertuoja. Atsiliepimai užtvirtina. Vientisa sistema, užtikrinanti stabilų jūsų verslo augimą.",
+    "SEO iškelia. Svetainė konvertuoja. Atsiliepimai užtvirtina. Vientisa sistema, užtikrinanti stabilų Jūsų verslo augimą.",
 };
 
 export const solutions = [
@@ -77,7 +77,7 @@ export const solutions = [
     icon: "layout",
   },
   {
-    title: "5 žvaigždutės be jūsų pastangų",
+    title: "5 žvaigždutės be Jūsų pastangų",
     description:
       "Automatizuota sistema pati paprašo patenkintų klientų palikti įvertinimą. Jūsų reputacija auga, kol jūs dirbate.",
     icon: "star",
@@ -85,7 +85,7 @@ export const solutions = [
   {
     title: "Į Google viršų — be reklamos",
     description:
-      "Vietinis SEO užtikrina, kad jūsų paslaugos ieškantys žmonės matytų jus, o ne konkurentus.",
+      "Vietinis SEO užtikrina, kad Jūsų paslaugos ieškantys žmonės matytų jus, o ne konkurentus.",
     icon: "map",
   },
 ];
@@ -93,7 +93,7 @@ export const solutions = [
 export const benefitsContent = {
   eyebrow: "Nauda",
   heading: "Ką gauna",
-  headingAccent: "jūsų verslas",
+  headingAccent: "Jūsų verslas",
   subtitle: "Investicija, kuri atsiperka rezultatais.",
 };
 
@@ -113,16 +113,16 @@ export const benefits = [
   {
     title: "Visada Google viršuje",
     description:
-      "Dominuojate „Google“ paieškoje 24/7. Esate matomi būtent tada, kai klientas ieško jūsų paslaugos.",
+      "Dominuojate „Google“ paieškoje 24/7. Esate matomi būtent tada, kai klientas ieško Jūsų paslaugos.",
     icon: "gem",
   },
 ];
 
 export const midCtaContent = {
   eyebrow: "Nemokamas auditas",
-  heading: "Pamatykite, kaip atrodys jūsų svetainė",
+  heading: "Pamatykite, kaip atrodys Jūsų svetainė",
   body:
-    "Susisiekę gausite nemokamą jūsų svetainės maketą, vietinio SEO bei „Google“ atsiliepimų auditą — be jokių įsipareigojimų.",
+    "Susisiekę gausite nemokamą Jūsų svetainės maketą, vietinio SEO bei „Google“ atsiliepimų auditą — be jokių įsipareigojimų.",
   cta: "Gaukite nemokamą auditą",
 };
 
@@ -132,7 +132,7 @@ export const processSteps = [
     stage: "Pokalbis",
     title: "Pokalbis ir auditas",
     description:
-      "Trumpo pokalbio metu įvertiname jūsų situaciją „Google“ ir parodome, kaip atrodys jūsų naujoji svetainė. Tiksliai įvardiname, kur slypi jūsų augimo potencialas.",
+      "Trumpo pokalbio metu įvertiname Jūsų situaciją „Google“ ir parodome, kaip atrodys Jūsų naujoji svetainė. Tiksliai įvardiname, kur slypi Jūsų augimo potencialas.",
     icon: "search",
   },
   {
@@ -250,7 +250,7 @@ export const ctaContent = {
   headingLine2Lead: "Ir ",
   headingLine2Accent: "pradedame.",
   subtitle:
-    "Trumpo skambučio metu parodysime jūsų naują svetainę ir augimo planą. Jokių įsipareigojimų.",
+    "Trumpo skambučio metu parodysime Jūsų naują svetainę ir augimo planą. Jokių įsipareigojimų.",
   cta: "Gaukite nemokamą auditą",
 };
 
@@ -267,17 +267,17 @@ export const faqItems = [
   {
     question: "Per kiek laiko paleisite svetainę?",
     answer:
-      "Nuo pirmo pokalbio iki veikiančios svetainės — vos 1–2 savaitės. Vertiname jūsų laiką, todėl dirbame be ilgų eilių ir vilkinimo.",
+      "Nuo pirmo pokalbio iki veikiančios svetainės — vos 1–2 savaitės. Vertiname Jūsų laiką, todėl dirbame be ilgų eilių ir vilkinimo.",
   },
   {
     question: "Ar tikrai būsiu Google viršuje?",
     answer:
-      "Mūsų tikslas — pasiekti Google Top 3 jūsų mieste per 90 dienų. Tai pasiekiame derindami techninį SEO ir aktyvų atsiliepimų rinkimą.",
+      "Mūsų tikslas — pasiekti Google Top 3 Jūsų mieste per 90 dienų. Tai pasiekiame derindami techninį SEO ir aktyvų atsiliepimų rinkimą.",
   },
   {
     question: "Ką gausiu pasirinkęs vietinį SEO užklausoje?",
     answer:
-      "Užpildę formą ir pasirinkę „Vietinis SEO“ per 24 val. gausite asmeninį 3 min. video, kuriame parodysime, kurioje vietoje jūsų verslas yra „Google“ paieškoje dabar ir konkretų planą, kaip pakelsime jus į viršų. Visiškai nemokamai.",
+      "Užpildę formą ir pasirinkę „Vietinis SEO“ per 24 val. gausite asmeninį 3 min. video, kuriame parodysime, kurioje vietoje Jūsų verslas yra „Google“ paieškoje dabar ir konkretų planą, kaip pakelsime jus į viršų. Visiškai nemokamai.",
   },
   {
     question: "Ar galima rinktis tik vieną paslaugą?",
@@ -314,6 +314,6 @@ export const contactContent = {
   heading: "Laukiam",
   headingAccent: "pokalbio.",
   subheadline:
-    "Susisiekę gausite nemokamą jūsų svetainės maketą, vietinio SEO ir „Google“ atsiliepimų auditą — viskas per 24 val.",
+    "Susisiekę gausite nemokamą Jūsų svetainės maketą, vietinio SEO ir „Google“ atsiliepimų auditą — viskas per 24 val.",
   responseNote: "Atsakome per 24 val.",
 };

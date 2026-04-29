@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import { inter, instrumentSerif } from "@/lib/fonts";
 import { siteConfig } from "@/lib/constants";
 import "./globals.css";
 
 const title = "Arktiv Media — Dvigubai daugiau užklausų per 90 dienų";
 const description =
-  "Sujungiame aukščiausio lygio dizainą, vietinį SEO ir automatizuotą atsiliepimų rinkimą į vieną sistemą, kuri paverčia jūsų svetainę klientų magnetu.";
+  "Sujungiame aukščiausio lygio dizainą, vietinį SEO ir automatizuotą atsiliepimų rinkimą į vieną sistemą, kuri paverčia Jūsų svetainę klientų magnetu.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -55,6 +56,7 @@ export default function RootLayout({
     >
       <body>
         {children}
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>

@@ -124,7 +124,7 @@ export default function Header() {
         <AnimatePresence>
           {mobileOpen && (
             <motion.div
-              className="lg:hidden fixed inset-0 top-16 bg-[#0a0a0b]/95 backdrop-blur-xl z-40"
+              className="lg:hidden fixed inset-0 top-16 bg-[#0a0a0b] z-40"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
