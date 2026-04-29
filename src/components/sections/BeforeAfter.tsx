@@ -226,7 +226,7 @@ export default function BeforeAfter() {
                   </div>
                 </div>
 
-                {/* ── Right: Image swap (bef.png ↔ aft.png) ── */}
+                {/* ── Right: Image swap (bef.webp ↔ aft.webp) ── */}
                 <div className="lg:col-span-7">
                   <div
                     className="relative w-full aspect-square max-w-[460px] mx-auto rounded-2xl overflow-hidden"
@@ -238,9 +238,11 @@ export default function BeforeAfter() {
                     <AnimatePresence mode="wait">
                       <motion.img
                         key={showAfter ? "after" : "before"}
-                        src={showAfter ? "/aft.png" : "/bef.png"}
+                        src={showAfter ? "/aft.webp" : "/bef.webp"}
                         alt={showAfter ? "Po" : "Prieš"}
-                        className="absolute inset-0 w-full h-full object-contain p-3"
+                        width={460}
+                        height={460}
+                        className="absolute inset-[8%] w-[84%] h-[84%] object-contain"
                         initial={{ opacity: 0, scale: 0.98 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.98 }}

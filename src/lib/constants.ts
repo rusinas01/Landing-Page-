@@ -4,7 +4,7 @@ export const siteConfig = {
   description:
     "Svetainės, vietinis SEO ir Google atsiliepimai — trys augimo varikliai vienoje vietoje.",
   email: "lukas@arktivmedia.com",
-  url: "https://arktivmedia.com",
+  url: "https://www.arktivmedia.com",
 };
 
 export const navLinks = [

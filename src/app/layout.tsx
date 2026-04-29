@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title,
   description,
   applicationName: siteConfig.name,
+  alternates: {
+    canonical: "/",
+  },
   keywords: [
     "svetainių kūrimas",
     "vietinis SEO",
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "lt_LT",
-    url: siteConfig.url,
+    url: siteConfig.url + "/",
     siteName: siteConfig.name,
     title,
     description,
@@ -41,6 +44,9 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  other: {
+    title,
   },
 };
 
