@@ -49,7 +49,7 @@ export default function TermsPage() {
                 className="font-[var(--font-inter)] font-light mb-12"
                 style={{ fontSize: "14px", color: "#71717a" }}
               >
-                Paskutinį kartą atnaujinta: 2026 m. balandžio 28 d.
+                Paskutinį kartą atnaujinta: 2026 m. balandžio 29 d.
               </p>
 
               <section className="mb-10">
@@ -157,7 +157,39 @@ export default function TermsPage() {
                   className="font-[var(--font-inter)] font-normal mb-4"
                   style={{ fontSize: "20px", color: "#FFFFFF" }}
                 >
-                  5. Intelektinė nuosavybė
+                  5. Rezultato garantija
+                </h2>
+                <p
+                  className="font-[var(--font-inter)] font-light"
+                  style={{
+                    fontSize: "15px",
+                    lineHeight: 1.75,
+                    color: "#A0A0A0",
+                  }}
+                >
+                  Jei klientas vienu metu užsako vietinio SEO ir „Google“
+                  atsiliepimų valdymo paslaugas ir per 90 dienų nuo darbų
+                  pradžios nepasiekia „Google“ Top 3 pozicijos savo mieste pagal
+                  iš anksto suderintus pagrindinius raktinius žodžius — toliau
+                  dirbame nemokamai tol, kol pažadėtas rezultatas pasiekiamas.
+                  Mėnesinis mokestis sustabdomas iki tol, kol pozicija realiai
+                  pakyla į Top 3.
+                  <br />
+                  <br />
+                  Garantija galioja, kai klientas savalaikiai suteikia prieigą
+                  prie „Google“ verslo profilio, svetainės bei reikalingos
+                  informacijos ir nesinaudoja kitų SEO ar atsiliepimų agentūrų
+                  paslaugomis tuo pačiu laikotarpiu. Tikslias garantijos sąlygas
+                  raštu patvirtiname prieš pradedant darbus.
+                </p>
+              </section>
+
+              <section className="mb-10">
+                <h2
+                  className="font-[var(--font-inter)] font-normal mb-4"
+                  style={{ fontSize: "20px", color: "#FFFFFF" }}
+                >
+                  6. Intelektinė nuosavybė
                 </h2>
                 <p
                   className="font-[var(--font-inter)] font-light"
@@ -179,7 +211,7 @@ export default function TermsPage() {
                   className="font-[var(--font-inter)] font-normal mb-4"
                   style={{ fontSize: "20px", color: "#FFFFFF" }}
                 >
-                  6. Sutarties nutraukimas
+                  7. Sutarties nutraukimas
                 </h2>
                 <p
                   className="font-[var(--font-inter)] font-light"
@@ -201,7 +233,7 @@ export default function TermsPage() {
                   className="font-[var(--font-inter)] font-normal mb-4"
                   style={{ fontSize: "20px", color: "#FFFFFF" }}
                 >
-                  7. Kontaktinė informacija
+                  8. Kontaktinė informacija
                 </h2>
                 <p
                   className="font-[var(--font-inter)] font-light"

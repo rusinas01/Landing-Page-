@@ -104,7 +104,7 @@ export default async function OpengraphImage() {
               color: "#8a96c4",
             }}
           >
-            Gaukite nemokamą auditą →
+            Gaukite NEMOKAMĄ auditą →
           </div>
         </div>
       </div>

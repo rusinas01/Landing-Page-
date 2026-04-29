@@ -86,7 +86,7 @@ export default function Header() {
             {/* Desktop CTA — gradient glow button matching site CTA */}
             <div className="hidden lg:block shrink-0">
               <a href="/#contact" className="btn-primary-blue whitespace-nowrap">
-                Gaukite nemokamą auditą
+                Gaukite NEMOKAMĄ auditą
               </a>
             </div>
 
@@ -164,7 +164,7 @@ export default function Header() {
                       }}
                       onClick={() => setMobileOpen(false)}
                     >
-                      Gaukite nemokamą auditą
+                      Gaukite NEMOKAMĄ auditą
                     </a>
                   </motion.li>
                 </ul>

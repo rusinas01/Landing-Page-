@@ -50,7 +50,7 @@ export default function Hero() {
             >
               NAUJA
             </span>
-            Svetainės &middot; SEO &middot; Atsiliepimai
+            Svetainės &middot; SEO &middot; Google Atsiliepimai
           </span>
         </motion.div>
 

@@ -123,7 +123,7 @@ export const midCtaContent = {
   heading: "Pamatykite, kaip atrodys Jūsų svetainė",
   body:
     "Susisiekę gausite nemokamą Jūsų svetainės maketą, vietinio SEO bei „Google“ atsiliepimų auditą — be jokių įsipareigojimų.",
-  cta: "Gaukite nemokamą auditą",
+  cta: "Gaukite NEMOKAMĄ auditą",
 };
 
 export const processSteps = [
@@ -251,7 +251,7 @@ export const ctaContent = {
   headingLine2Accent: "pradedame.",
   subtitle:
     "Trumpo skambučio metu parodysime Jūsų naują svetainę ir augimo planą. Jokių įsipareigojimų.",
-  cta: "Gaukite nemokamą auditą",
+  cta: "Gaukite NEMOKAMĄ auditą",
 };
 
 export const faqContent = {

@@ -74,7 +74,7 @@ export default function About() {
               variants={fadeInUp}
             >
               <a href="#contact" className="btn-primary-blue">
-                Gaukite nemokamą auditą
+                Gaukite NEMOKAMĄ auditą
               </a>
             </motion.div>
           </motion.div>
