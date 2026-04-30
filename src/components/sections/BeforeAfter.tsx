@@ -242,6 +242,8 @@ export default function BeforeAfter() {
                         alt={showAfter ? "Po" : "Prieš"}
                         width={460}
                         height={460}
+                        loading="lazy"
+                        decoding="async"
                         className="absolute inset-[8%] w-[84%] h-[84%] object-contain"
                         initial={{ opacity: 0, scale: 0.98 }}
                         animate={{ opacity: 1, scale: 1 }}

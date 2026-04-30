@@ -116,15 +116,20 @@ const ProceduralGroundBackground: React.FC = () => {
 
     let animationFrameId: number | null = null;
     let isVisible = true;
+    let lastFrame = 0;
+    const FRAME_INTERVAL = 1000 / 30; // 30 fps cap
 
     const render = (time: number) => {
       if (!isVisible) {
         animationFrameId = null;
         return;
       }
-      gl.uniform1f(timeLoc, time * 0.001);
-      gl.uniform2f(resLoc, width, height);
-      gl.drawArrays(gl.TRIANGLES, 0, 6);
+      if (time - lastFrame >= FRAME_INTERVAL) {
+        gl.uniform1f(timeLoc, time * 0.001);
+        gl.uniform2f(resLoc, width, height);
+        gl.drawArrays(gl.TRIANGLES, 0, 6);
+        lastFrame = time;
+      }
       animationFrameId = requestAnimationFrame(render);
     };
 

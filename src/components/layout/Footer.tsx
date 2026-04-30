@@ -38,6 +38,8 @@ export default function Footer() {
                 alt={siteConfig.name}
                 width={200}
                 height={142}
+                loading="lazy"
+                decoding="async"
                 className="h-14 w-auto"
               />
             </a>

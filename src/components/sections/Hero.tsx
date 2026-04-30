@@ -1,9 +1,15 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { AuroraBackground } from "../ui/aurora-background";
-import ProceduralGroundBackground from "../ui/ProceduralGroundBackground";
 import { heroContent } from "@/lib/constants";
+
+// Defer WebGL background — decorative only, not needed for first paint or SSR
+const ProceduralGroundBackground = dynamic(
+  () => import("../ui/ProceduralGroundBackground"),
+  { ssr: false },
+);
 
 // Smooth, "expensive" easing — slow tail for a settled feel
 const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
