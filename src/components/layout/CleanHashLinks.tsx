@@ -10,10 +10,8 @@ const PATH_TO_SECTION: Record<string, string> = {
   "/kontaktai": "contact",
 };
 
-const SECTION_PATHS = new Set(Object.keys(PATH_TO_SECTION));
-
-function isSectionPath(pathname: string): pathname is keyof typeof PATH_TO_SECTION {
-  return SECTION_PATHS.has(pathname);
+function getSectionId(pathname: string): string | undefined {
+  return PATH_TO_SECTION[pathname];
 }
 
 export default function CleanHashLinks() {
@@ -24,7 +22,7 @@ export default function CleanHashLinks() {
     }
 
     function isHomePath(pathname: string) {
-      return pathname === "/" || isSectionPath(pathname);
+      return pathname === "/" || getSectionId(pathname) !== undefined;
     }
 
     function handleClick(e: MouseEvent) {
@@ -37,11 +35,11 @@ export default function CleanHashLinks() {
       const href = link.getAttribute("href");
       if (!href) return;
 
-      // Pretty section route like /kainos
-      if (isSectionPath(href)) {
+      const sectionId = getSectionId(href);
+      if (sectionId) {
         if (!isHomePath(window.location.pathname)) return; // let browser navigate
         e.preventDefault();
-        scrollToId(PATH_TO_SECTION[href]);
+        scrollToId(sectionId);
         window.history.pushState(null, "", href);
         return;
       }
@@ -61,9 +59,9 @@ export default function CleanHashLinks() {
 
     // Initial load: scroll to section if URL is /kainos etc, or if there's a #hash
     const path = window.location.pathname;
-    if (isSectionPath(path)) {
-      const id = PATH_TO_SECTION[path];
-      const cleanup = () => scrollToId(id);
+    const initialSection = getSectionId(path);
+    if (initialSection) {
+      const cleanup = () => scrollToId(initialSection);
       if (document.readyState === "complete") cleanup();
       else window.addEventListener("load", cleanup, { once: true });
     } else if (window.location.hash && path === "/") {
