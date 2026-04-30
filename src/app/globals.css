@@ -184,7 +184,7 @@
   --color-star-empty: var(--grey-700);
 }
 
-* {
+html {
   scrollbar-width: thin;
   scrollbar-color: var(--grey-700) transparent;
 }

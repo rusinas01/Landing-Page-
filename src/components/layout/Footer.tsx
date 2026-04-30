@@ -60,7 +60,7 @@ export default function Footer() {
               className="mb-5 font-[var(--font-inter)] font-light uppercase tracking-wider"
               style={{
                 fontSize: "11px",
-                color: "#71717a",
+                color: "#a1a1aa",
                 letterSpacing: "0.14em",
               }}
             >
@@ -93,7 +93,7 @@ export default function Footer() {
               className="mb-5 font-[var(--font-inter)] font-light uppercase tracking-wider"
               style={{
                 fontSize: "11px",
-                color: "#71717a",
+                color: "#a1a1aa",
                 letterSpacing: "0.14em",
               }}
             >

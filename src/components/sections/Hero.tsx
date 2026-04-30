@@ -42,7 +42,7 @@ export default function Hero() {
               className="inline-flex items-center justify-center px-2 py-1 text-[11px] font-[var(--font-inter)] font-normal tracking-wide uppercase"
               style={{
                 background: "#8a96c4",
-                color: "#FFFFFF",
+                color: "#0a0a0b",
                 borderRadius: "6px",
                 boxShadow:
                   "0 0 0 1px rgba(255, 255, 255, 0.25) inset, 0 0 12px rgba(138, 150, 196, 0.5)",
@@ -54,8 +54,8 @@ export default function Hero() {
           </span>
         </motion.div>
 
-        {/* Heading — Inter Regular, massive, tight tracking */}
-        <motion.h1
+        {/* Heading — Inter Regular, massive, tight tracking — paints immediately for LCP */}
+        <h1
           className="font-[var(--font-inter)] font-normal max-w-4xl"
           style={{
             fontSize: "clamp(2.5rem, 7vw, 5.5rem)",
@@ -63,12 +63,9 @@ export default function Hero() {
             lineHeight: 1.08,
             color: "#FFFFFF",
           }}
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2, ease }}
         >
           {heroContent.headline}
-        </motion.h1>
+        </h1>
 
         {/* Subtext */}
         <motion.p

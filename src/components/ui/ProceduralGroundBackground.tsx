@@ -93,28 +93,63 @@ const ProceduralGroundBackground: React.FC = () => {
     const timeLoc = gl.getUniformLocation(program, "u_time");
     const resLoc = gl.getUniformLocation(program, "u_resolution");
 
-    let animationFrameId: number;
+    let width = canvas.parentElement?.clientWidth ?? window.innerWidth;
+    let height = canvas.parentElement?.clientHeight ?? window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
+    gl.viewport(0, 0, width, height);
+
+    const parent = canvas.parentElement;
+    const resizeObserver = parent
+      ? new ResizeObserver((entries) => {
+          const entry = entries[0];
+          if (!entry) return;
+          const { width: w, height: h } = entry.contentRect;
+          width = w;
+          height = h;
+          canvas.width = w;
+          canvas.height = h;
+          gl.viewport(0, 0, w, h);
+        })
+      : null;
+    resizeObserver?.observe(parent!);
+
+    let animationFrameId: number | null = null;
+    let isVisible = true;
+
     const render = (time: number) => {
-      const rect = canvas.parentElement?.getBoundingClientRect();
-      const width = rect?.width ?? window.innerWidth;
-      const height = rect?.height ?? window.innerHeight;
-
-      if (canvas.width !== width || canvas.height !== height) {
-        canvas.width = width;
-        canvas.height = height;
-        gl.viewport(0, 0, width, height);
+      if (!isVisible) {
+        animationFrameId = null;
+        return;
       }
-
       gl.uniform1f(timeLoc, time * 0.001);
       gl.uniform2f(resLoc, width, height);
       gl.drawArrays(gl.TRIANGLES, 0, 6);
       animationFrameId = requestAnimationFrame(render);
     };
 
+    const visibilityObserver = new IntersectionObserver(
+      (entries) => {
+        const visible = entries[0]?.isIntersecting ?? false;
+        if (visible && !isVisible) {
+          isVisible = true;
+          if (animationFrameId === null) {
+            animationFrameId = requestAnimationFrame(render);
+          }
+        } else if (!visible && isVisible) {
+          isVisible = false;
+        }
+      },
+      { threshold: 0 },
+    );
+    visibilityObserver.observe(canvas);
+
     animationFrameId = requestAnimationFrame(render);
 
     return () => {
-      cancelAnimationFrame(animationFrameId);
+      if (animationFrameId !== null) cancelAnimationFrame(animationFrameId);
+      resizeObserver?.disconnect();
+      visibilityObserver.disconnect();
     };
   }, []);
 
