@@ -43,7 +43,7 @@ export default function Hero() {
               className="inline-flex items-center justify-center px-2 py-1 text-[11px] font-[var(--font-inter)] font-normal tracking-wide uppercase"
               style={{
                 background: "#8a96c4",
-                color: "#0a0a0b",
+                color: "#FFFFFF",
                 borderRadius: "6px",
                 boxShadow:
                   "0 0 0 1px rgba(255, 255, 255, 0.25) inset, 0 0 12px rgba(138, 150, 196, 0.5)",
