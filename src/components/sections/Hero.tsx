@@ -5,7 +5,8 @@ import { AuroraBackground } from "../ui/aurora-background";
 import ProceduralGroundBackground from "../ui/ProceduralGroundBackground";
 import { heroContent } from "@/lib/constants";
 
-const ease = [0.16, 1, 0.3, 1] as [number, number, number, number];
+// Smooth, "expensive" easing — slow tail for a settled feel
+const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
 export default function Hero() {
   return (
@@ -21,9 +22,9 @@ export default function Hero() {
         {/* Badge — glassmorphism */}
         <motion.div
           className="mb-10"
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1, ease }}
+          initial={{ opacity: 0, y: 14, filter: "blur(6px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ duration: 0.9, delay: 0.15, ease }}
         >
           <span
             className="inline-flex items-center gap-2.5 pl-1.5 pr-4 py-1.5 text-[13px] font-[var(--font-inter)] font-normal"
@@ -54,8 +55,8 @@ export default function Hero() {
           </span>
         </motion.div>
 
-        {/* Heading — Inter Regular, massive, tight tracking — paints immediately for LCP */}
-        <h1
+        {/* Heading — Inter Regular. Opacity stays at 1 (LCP), only translateY animates */}
+        <motion.h1
           className="font-[var(--font-inter)] font-normal max-w-4xl"
           style={{
             fontSize: "clamp(2.5rem, 7vw, 5.5rem)",
@@ -63,9 +64,12 @@ export default function Hero() {
             lineHeight: 1.08,
             color: "#FFFFFF",
           }}
+          initial={{ y: 14 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 1.1, delay: 0.25, ease }}
         >
           {heroContent.headline}
-        </h1>
+        </motion.h1>
 
         {/* Subtext */}
         <motion.p
@@ -75,9 +79,9 @@ export default function Hero() {
             lineHeight: 1.6,
             color: "#A0A0A0",
           }}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4, ease }}
+          initial={{ opacity: 0, y: 16, filter: "blur(4px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ duration: 0.9, delay: 0.5, ease }}
         >
           {heroContent.subheadline}
         </motion.p>
@@ -85,9 +89,9 @@ export default function Hero() {
         {/* CTAs */}
         <motion.div
           className="mt-12 flex flex-col sm:flex-row items-start gap-3"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6, ease }}
+          transition={{ duration: 0.9, delay: 0.7, ease }}
         >
           <a
             href="/kontaktai"
