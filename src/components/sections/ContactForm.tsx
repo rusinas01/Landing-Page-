@@ -367,7 +367,7 @@ export default function ContactForm() {
                     className="font-[var(--font-inter)] font-light max-w-md"
                     style={{ fontSize: "14px", color: "#A0A0A0", lineHeight: 1.6 }}
                   >
-                    Per 24 val. atsiųsime Jūsų svetainės maketą, SEO ir
+                    Per 24 val. atsiųsiu Jūsų svetainės maketą, SEO ir
                     „Google“ atsiliepimų auditą
                     {submittedServices.includes("seo") && (
                       <>
@@ -375,7 +375,7 @@ export default function ContactForm() {
                         <span style={{ color: "#FFFFFF" }}>
                           3 min. video
                         </span>
-                        , kuriame parodysime Jūsų dabartinę poziciją „Google“
+                        , kuriame parodysiu Jūsų dabartinę poziciją „Google“
                         ir augimo planą
                       </>
                     )}
@@ -467,10 +467,10 @@ export default function ContactForm() {
                       >
                         Bonus: pasirinkus{" "}
                         <span style={{ color: "#FFFFFF" }}>vietinį SEO</span>{" "}
-                        atsiųsime asmeninį{" "}
+                        atsiųsiu asmeninį{" "}
                         <span style={{ color: "#FFFFFF" }}>3 min. video</span>
-                        , kuriame parodysime kur Jūsų verslas yra „Google“
-                        dabar ir kaip pakelsime jį į viršų.
+                        , kuriame parodysiu kur Jūsų verslas yra „Google“
+                        dabar ir kaip pakelsiu jį į viršų.
                       </p>
                     </div>
                   </div>
@@ -522,7 +522,7 @@ export default function ContactForm() {
                       name="message"
                       required
                       rows={5}
-                      placeholder="Papasakokite apie savo veiklą ir tikslus — visa kita paruošime mes."
+                      placeholder="Papasakokite apie savo veiklą ir tikslus — visa kita paruošiu aš."
                       className="w-full font-[var(--font-inter)] font-light outline-none transition-colors duration-200 resize-none"
                       style={{
                         background: "rgba(255, 255, 255, 0.02)",
@@ -558,7 +558,7 @@ export default function ContactForm() {
                         lineHeight: 1.6,
                       }}
                     >
-                      Atsiųsime nemokamą{" "}
+                      Atsiųsiu nemokamą{" "}
                       <span style={{ color: "#FFFFFF" }}>
                         svetainės maketą
                       </span>

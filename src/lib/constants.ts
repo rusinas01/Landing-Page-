@@ -18,7 +18,7 @@ export const navLinks = [
 export const heroContent = {
   headline: "Dvigubai daugiau užklausų per 90 dienų.",
   subheadline:
-    "Sujungiame aukščiausio lygio dizainą, vietinį SEO ir automatizuotą atsiliepimų rinkimą į vieną sistemą, kuri paverčia Jūsų svetainę klientų magnetu.",
+    "Sujungiu aukščiausio lygio dizainą, vietinį SEO ir automatizuotą atsiliepimų rinkimą į vieną sistemą, kuri paverčia Jūsų svetainę klientų magnetu.",
   cta: "Susisiekti",
 };
 
@@ -122,7 +122,7 @@ export const midCtaContent = {
   eyebrow: "Nemokamas auditas",
   heading: "Pamatykite, kaip atrodys Jūsų svetainė",
   body:
-    "Susisiekę gausite nemokamą Jūsų svetainės maketą, vietinio SEO bei „Google“ atsiliepimų auditą — be jokių įsipareigojimų.",
+    "Parašykite — atsiųsiu nemokamą Jūsų svetainės maketą, vietinio SEO bei „Google“ atsiliepimų auditą. Be jokių įsipareigojimų.",
   cta: "Gaukite NEMOKAMĄ auditą",
 };
 
@@ -132,7 +132,7 @@ export const processSteps = [
     stage: "Pokalbis",
     title: "Pokalbis ir auditas",
     description:
-      "Trumpo pokalbio metu įvertiname Jūsų situaciją „Google“ ir parodome, kaip atrodys Jūsų naujoji svetainė. Tiksliai įvardiname, kur slypi Jūsų augimo potencialas.",
+      "Trumpo pokalbio metu įvertinu Jūsų situaciją „Google“ ir parodau, kaip atrodys Jūsų naujoji svetainė. Tiksliai įvardinu, kur slypi Jūsų augimo potencialas.",
     icon: "search",
   },
   {
@@ -140,7 +140,7 @@ export const processSteps = [
     stage: "Kūrimas",
     title: "Sistemos kūrimas",
     description:
-      "Sutvarkome tekstus, sukuriame svetainę ir pajungiame atsiliepimų rinkimą. Paruošiame visus techninius sprendimus už jus.",
+      "Sutvarkau tekstus, sukuriu svetainę ir pajungiu atsiliepimų rinkimą. Paruošiu visus techninius sprendimus už jus.",
     icon: "pen",
   },
   {
@@ -148,7 +148,7 @@ export const processSteps = [
     stage: "Augimas",
     title: "Paleidimas ir augimas",
     description:
-      "Paleidžiame sistemą ir pradedame SEO darbus. Jums nebereikia rūpintis detalėmis — tiesiog stebite augantį užklausų srautą.",
+      "Paleidžiu sistemą ir pradedu SEO darbus. Jums nebereikia rūpintis detalėmis — tiesiog stebite augantį užklausų srautą.",
     icon: "rocket",
   },
 ];
@@ -248,9 +248,9 @@ export const ctaContent = {
   eyebrow: "Pradėkime",
   headingLine1: "Vienas pokalbis.",
   headingLine2Lead: "Ir ",
-  headingLine2Accent: "pradedame.",
+  headingLine2Accent: "pradedu.",
   subtitle:
-    "Trumpo skambučio metu parodysime Jūsų naują svetainę ir augimo planą. Jokių įsipareigojimų.",
+    "Trumpo skambučio metu parodysiu Jūsų naują svetainę ir augimo planą. Jokių įsipareigojimų.",
   cta: "Gaukite NEMOKAMĄ auditą",
 };
 
@@ -272,12 +272,12 @@ export const faqItems = [
   {
     question: "Ar tikrai būsiu Google viršuje?",
     answer:
-      "Mūsų tikslas — pasiekti Google Top 3 Jūsų mieste per 90 dienų. Tai pasiekiame derindami techninį SEO ir aktyvų atsiliepimų rinkimą.",
+      "Mano tikslas — pasiekti Google Top 3 Jūsų mieste per 90 dienų. Tai pasiekiu derindamas techninį SEO ir aktyvų atsiliepimų rinkimą.",
   },
   {
     question: "Ką gausiu pasirinkęs vietinį SEO užklausoje?",
     answer:
-      "Užpildę formą ir pasirinkę „Vietinis SEO“ per 24 val. gausite asmeninį 3 min. video, kuriame parodysime, kurioje vietoje Jūsų verslas yra „Google“ paieškoje dabar ir konkretų planą, kaip pakelsime jus į viršų. Visiškai nemokamai.",
+      "Užpildę formą ir pasirinkę „Vietinis SEO“ per 24 val. gausite asmeninį 3 min. video, kuriame parodysiu, kurioje vietoje Jūsų verslas yra „Google“ paieškoje dabar ir konkretų planą, kaip pakelsiu jus į viršų. Visiškai nemokamai.",
   },
   {
     question: "Ar galima rinktis tik vieną paslaugą?",
@@ -287,26 +287,46 @@ export const faqItems = [
   {
     question: "Ar pats rašysiu tekstus?",
     answer:
-      "Ne. Mes paruošiame įtaigius, parduodančius tekstus už jus. Jums tereikės peržvelgti ir patvirtinti galutinį variantą.",
+      "Ne. Aš paruošiu įtaigius, parduodančius tekstus už jus. Jums tereikės peržvelgti ir patvirtinti galutinį variantą.",
   },
   {
     question: "O jei nematysiu rezultato?",
     answer:
-      "Dirbame skaidriai — jokių ilgalaikių sutarčių. Jei nematote vertės, paslaugų galite atsisakyti bet kada. Mes augame tik tada, kai augate jūs.",
+      "Dirbu skaidriai — jokių ilgalaikių sutarčių. Jei nematote vertės, paslaugų galite atsisakyti bet kada. Aš augu tik tada, kai augate jūs.",
   },
   {
     question: "Su kuo bendrausiu?",
     answer:
-      "Tiesiogiai su mumis. Jokių projektų vadovų ar tarpininkų — operatyvus ryšys ir atsakymai į klausimus čia ir dabar.",
+      "Tiesiogiai su manimi. Jokių projektų vadovų ar tarpininkų — žinosite, kam skambinate ir kas kelia ragelį.",
   },
 ];
 
 export const aboutContent = {
-  tag: "Apie mus",
-  heading: "Mūsų tikslas —",
+  tag: "Apie mane",
+  heading: "Mano tikslas —",
   headingAccent: "augti kartu.",
   body:
-    "Esame jauna agentūra iš Vilniaus, įkurta 2026 m. Padedame Lietuvos verslui — nuo individualios veiklos iki augančių komandų — pritraukti daugiau užklausų internete. Jokių milžiniškų biudžetų ar tuščių pažadų. Tik moderni svetainė, matomas SEO ir „Google“ atsiliepimų sistema, kuri dirba už jus.",
+    "Esu Lukas, „Arktiv Media“ įkūrėjas. Padedu Lietuvos verslams — nuo individualios veiklos iki augančių komandų — persikelti į skaitmeninę erdvę paprastai ir efektyviai. Mano tikslas ne tik sukurti gražų vaizdą, bet ir užtikrinti, kad Jūsų svetainė taptų realiu pardavimų įrankiu. Kiekvieną projektą įgyvendinu asmeniškai — todėl galiu garantuoti dėmesį detalėms ir kokybę, kurios tikitės.",
+  perks: [
+    {
+      title: "Jokio „sugedusio telefono“",
+      description:
+        "Bendraujate tiesiogiai su kūrėju — be projektų vadovų ir tarpininkų.",
+      icon: "message",
+    },
+    {
+      title: "Lankstumas",
+      description:
+        "Greitesni sprendimai ir pakeitimai. Be biurokratijos ir ilgų derinimo grandinių.",
+      icon: "bolt",
+    },
+    {
+      title: "Asmeninis palaikymas",
+      description:
+        "Žinote, kam skambinate ir kas kelia ragelį. Tas pats žmogus nuo pirmo pokalbio iki paleidimo.",
+      icon: "phone",
+    },
+  ],
 };
 
 export const contactContent = {
@@ -314,6 +334,6 @@ export const contactContent = {
   heading: "Laukiam",
   headingAccent: "pokalbio.",
   subheadline:
-    "Susisiekę gausite nemokamą Jūsų svetainės maketą, vietinio SEO ir „Google“ atsiliepimų auditą — viskas per 24 val.",
-  responseNote: "Atsakome per 24 val.",
+    "Parašykite — atsiųsiu nemokamą Jūsų svetainės maketą, vietinio SEO ir „Google“ atsiliepimų auditą per 24 val.",
+  responseNote: "Atsakau per 24 val.",
 };

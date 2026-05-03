@@ -52,7 +52,7 @@ export default function Footer() {
                 maxWidth: "280px",
               }}
             >
-              Į užklausas orientuotas dizainas ir matomas SEO. Dirbkite tiesiogiai su kūrėjais — be agentūrinio tarpininkavimo.
+              Į užklausas orientuotas dizainas ir matomas SEO. Dirbkite tiesiogiai su kūrėju — be agentūrinio tarpininkavimo.
             </p>
           </div>
 
