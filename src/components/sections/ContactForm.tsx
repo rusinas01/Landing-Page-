@@ -391,7 +391,7 @@ export default function ContactForm() {
                         className="font-[var(--font-inter)] font-normal"
                         style={{ fontSize: "14px", color: "#FFFFFF" }}
                       >
-                        Kokios paslaugos jus domina?
+                        Kokios paslaugos Jus domina?
                       </label>
                       <span
                         className="font-[var(--font-inter)] font-light"

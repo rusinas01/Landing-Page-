@@ -112,7 +112,7 @@ export default function TermsPage() {
                     color: "#A0A0A0",
                   }}
                 >
-                  Svetainės paleidžiame per 1–2 savaites nuo pirmojo pokalbio.
+                  Svetaines paleidžiu per 1–2 savaites nuo pirmojo pokalbio.
                   SEO ir atsiliepimų sistemos rezultatai paprastai matomi per
                   30–90 dienų. Klientas įsipareigoja savalaikiai pateikti visą
                   projektui reikalingą informaciją, įskaitant prieigą prie

@@ -120,7 +120,7 @@ export default function PrivacyPage() {
                   }}
                 >
                   Jūsų pateikti duomenys naudojami tik tam, kad galėtume su
-                  jumis susisiekti ir atsakyti į užklausas dėl paslaugų — tarp
+                  Jumis susisiekti ir atsakyti į užklausas dėl paslaugų — tarp
                   jų atsiųsti nemokamą svetainės maketą, vietinio SEO ir
                   „Google“ atsiliepimų auditą bei (pasirinkus vietinio SEO
                   paslaugą) asmeninį 3 min. video.

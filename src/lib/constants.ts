@@ -44,14 +44,14 @@ export const problems = [
     title: "Svetainė, kuri neparduoda",
     problem: "Lankytojai užsuka, bet netampa klientais.",
     description:
-      "Jei svetainė lėta arba nepatogi telefonu, žmonės jumis nebepasitiki. Užuot gaišę laiką, jie išeina pas konkurentus, kurie internete atrodo profesionaliau.",
+      "Jei svetainė lėta arba nepatogi telefonu, žmonės Jumis nebepasitiki. Užuot gaišę laiką, jie išeina pas konkurentus, kurie internete atrodo profesionaliau.",
     icon: "monitor",
   },
   {
     title: "Niekas Jūsų neranda „Google“",
     problem: "Esate nematomi ten, kur Jūsų ieško.",
     description:
-      "Galite būti geriausi savo srityje, bet jei „Google“ pirmame puslapyje karaliauja konkurentai, jūs tiesiog neegzistuojate. Kiekviena diena be SEO yra atiduota užklausa kitam.",
+      "Galite būti geriausi savo srityje, bet jei „Google“ pirmame puslapyje karaliauja konkurentai, Jūs tiesiog neegzistuojate. Kiekviena diena be SEO yra atiduota užklausa kitam.",
     icon: "search",
   },
   {
@@ -71,7 +71,7 @@ export const solutionsContent = {
 
 export const solutions = [
   {
-    title: "Svetainė, kuri dirba už jus",
+    title: "Svetainė, kuri dirba už Jus",
     description:
       "Aiški, greita ir sukurta vienam tikslui — paversti lankytoją klientu. Ne dėl vaizdo, o dėl realių pardavimų.",
     icon: "layout",
@@ -79,13 +79,13 @@ export const solutions = [
   {
     title: "5 žvaigždutės be Jūsų pastangų",
     description:
-      "Automatizuota sistema pati paprašo patenkintų klientų palikti įvertinimą. Jūsų reputacija auga, kol jūs dirbate.",
+      "Automatizuota sistema pati paprašo patenkintų klientų palikti įvertinimą. Jūsų reputacija auga, kol Jūs dirbate.",
     icon: "star",
   },
   {
     title: "Į Google viršų — be reklamos",
     description:
-      "Vietinis SEO užtikrina, kad Jūsų paslaugos ieškantys žmonės matytų jus, o ne konkurentus.",
+      "Vietinis SEO užtikrina, kad Jūsų paslaugos ieškantys žmonės matytų Jus, o ne konkurentus.",
     icon: "map",
   },
 ];
@@ -107,7 +107,7 @@ export const benefits = [
   {
     title: "Geresnė reputacija",
     description:
-      "5 žvaigždučių reputacija padaro jus akivaizdžiu pasirinkimu. Tai užtikrina kliento pasitikėjimą dar iki paties pardavimo.",
+      "5 žvaigždučių reputacija padaro Jus akivaizdžiu pasirinkimu. Tai užtikrina kliento pasitikėjimą dar iki paties pardavimo.",
     icon: "shield",
   },
   {
@@ -140,7 +140,7 @@ export const processSteps = [
     stage: "Kūrimas",
     title: "Sistemos kūrimas",
     description:
-      "Sutvarkau tekstus, sukuriu svetainę ir pajungiu atsiliepimų rinkimą. Paruošiu visus techninius sprendimus už jus.",
+      "Sutvarkau tekstus, sukuriu svetainę ir pajungiu atsiliepimų rinkimą. Paruošiu visus techninius sprendimus už Jus.",
     icon: "pen",
   },
   {
@@ -267,7 +267,7 @@ export const faqItems = [
   {
     question: "Per kiek laiko paleisite svetainę?",
     answer:
-      "Nuo pirmo pokalbio iki veikiančios svetainės — vos 1–2 savaitės. Vertiname Jūsų laiką, todėl dirbame be ilgų eilių ir vilkinimo.",
+      "Nuo pirmo pokalbio iki veikiančios svetainės — vos 1–2 savaitės. Vertinu Jūsų laiką, todėl dirbu be ilgų eilių ir vilkinimo.",
   },
   {
     question: "Ar tikrai būsiu Google viršuje?",
@@ -277,7 +277,7 @@ export const faqItems = [
   {
     question: "Ką gausiu pasirinkęs vietinį SEO užklausoje?",
     answer:
-      "Užpildę formą ir pasirinkę „Vietinis SEO“ per 24 val. gausite asmeninį 3 min. video, kuriame parodysiu, kurioje vietoje Jūsų verslas yra „Google“ paieškoje dabar ir konkretų planą, kaip pakelsiu jus į viršų. Visiškai nemokamai.",
+      "Užpildę formą ir pasirinkę „Vietinis SEO“ per 24 val. gausite asmeninį 3 min. video, kuriame parodysiu, kurioje vietoje Jūsų verslas yra „Google“ paieškoje dabar ir konkretų planą, kaip pakelsiu Jus į viršų. Visiškai nemokamai.",
   },
   {
     question: "Ar galima rinktis tik vieną paslaugą?",
@@ -287,12 +287,12 @@ export const faqItems = [
   {
     question: "Ar pats rašysiu tekstus?",
     answer:
-      "Ne. Aš paruošiu įtaigius, parduodančius tekstus už jus. Jums tereikės peržvelgti ir patvirtinti galutinį variantą.",
+      "Ne. Aš paruošiu įtaigius, parduodančius tekstus už Jus. Jums tereikės peržvelgti ir patvirtinti galutinį variantą.",
   },
   {
     question: "O jei nematysiu rezultato?",
     answer:
-      "Dirbu skaidriai — jokių ilgalaikių sutarčių. Jei nematote vertės, paslaugų galite atsisakyti bet kada. Aš augu tik tada, kai augate jūs.",
+      "Dirbu skaidriai — jokių ilgalaikių sutarčių. Jei nematote vertės, paslaugų galite atsisakyti bet kada. Aš augu tik tada, kai augate Jūs.",
   },
   {
     question: "Su kuo bendrausiu?",
@@ -331,7 +331,7 @@ export const aboutContent = {
 
 export const contactContent = {
   eyebrow: "Kontaktai",
-  heading: "Laukiam",
+  heading: "Laukiu",
   headingAccent: "pokalbio.",
   subheadline:
     "Parašykite — atsiųsiu nemokamą Jūsų svetainės maketą, vietinio SEO ir „Google“ atsiliepimų auditą per 24 val.",
